@@ -1,0 +1,61 @@
+
+
+body {
+    background-image: url("https://wallpapers.com/images/hd/fox-pokemon-eevee-evolutions-07z8sfked7vtraja-07z8sfked7vtraja.webp");
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+
+.homeBox{
+    align-content: center;
+    padding-top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.cards{
+    padding: 10;
+    height: 700px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, minmax(40px,600px));
+    grid-auto-rows: minmax(auto, 600px);
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.linkDiv{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 32px;
+    text-transform:capitalize;
+    text-decoration: none;
+    
+  
+}
+
+.titleHome{
+    font-size: 32px;
+    font-family: 'Pokemon Solid';
+    color: yellow;
+    text-shadow: 2px 0 blue, -2px 0 blue, 0 2px blue, 0 -2px blue,
+               1px 1px blue, -1px -1px blue, 1px -1px blue, -1px 1px blue;
+padding-top: 70px;
+letter-spacing: 0.2em;
+            }
+
+
+.buttonDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+.selectType{
+    text-transform: capitalize;
+}

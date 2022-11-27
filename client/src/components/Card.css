@@ -1,0 +1,112 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+.card{
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    width:240px;
+    height: 350px;
+    border-radius: 30px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    display: grid;
+    border: 3px solid black;
+    justify-items: center;
+    justify-content: space-around;
+    background: linear-gradient(90deg, rgb(244, 245, 220) 0%, rgb(218, 218, 188) 50%, rgb(244, 245, 220) 100%);
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    transition: all .3s linear;
+    
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.titleCard{
+    
+    font-size: 22px;
+    font-family: 'Pokemon Solid';
+    color: yellow;
+    
+    width: 200px;
+    height: 80px;
+    text-shadow: 2px 0 blue, -2px 0 blue, 0 2px blue, 0 -2px blue,
+               1px 1px blue, -1px -1px blue, 1px -1px blue, -1px 1px blue;
+               letter-spacing: 0.3em;
+               line-height : 1.3em;
+               text-transform:capitalize;
+               padding: 0px;
+              
+               
+}
+.typesDivCard{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-items: space-around;
+    font-size: 14px;
+    text-transform:capitalize;
+    text-decoration: none;
+    padding: 0px;
+    margin:0px;
+}
+.subtitleCard{
+    font-family: arial;
+    color: black;
+    font-size: 18px;
+    text-transform:capitalize;
+    text-decoration: none;
+    padding: 0px;
+    margin:0px;
+}
+
+.imgPoke{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.imgDivCard{
+    width: 210px;
+    height: 210px;
+    padding-bottom: 20px;
+}
+.deleteButton{
+ margin-top: 10px;
+ background-color: white;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ border-radius: 30px;
+ box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+ border: 2px solid red;
+ background: linear-gradient(90deg, rgb(244, 245, 220) 0%, rgb(218, 218, 188) 50%, rgb(244, 245, 220) 100%);
+ box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+ transition: all .3s linear;
+}
+
+.deleteButton:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.typesConteiner{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+   margin-bottom: 15px;
+   align-items: flex-end;
+   justify-content: center;
+
+  
+}
+.types{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid goldenrod;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 2px bold;
+}
