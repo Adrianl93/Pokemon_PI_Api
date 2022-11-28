@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
       type:DataTypes.INTEGER,
       validate:{
         isInt: true, 
-        max: 1000,                  
+        max: 256,                  
         min: 1, 
       }
     },
@@ -35,7 +35,7 @@ module.exports = (sequelize) => {
       type:DataTypes.INTEGER,
       validate:{
         isInt: true, 
-        max: 1000,                  
+        max: 256,                  
         min: 1, 
       } 
     },
@@ -43,7 +43,7 @@ module.exports = (sequelize) => {
       type:DataTypes.INTEGER,
       validate:{
         isInt: true, 
-        max: 1000,                  
+        max: 256,                  
         min: 1, 
       } 
     },
@@ -51,7 +51,7 @@ module.exports = (sequelize) => {
       type:DataTypes.INTEGER,
       validate:{
         isInt: true, 
-        max: 1000,                  
+        max: 256,                  
         min: 1, 
       } 
     },
@@ -59,16 +59,18 @@ module.exports = (sequelize) => {
       type:DataTypes.INTEGER,
       validate:{
         isInt: true, 
-        max: 500,                  
-        min: 1, 
+        max: 100000,                  
+        min: 0, 
       } 
     },
     weight:{
       type:DataTypes.INTEGER,
       
       validate:{
-        isInt: true,                   
-        min: 1, 
+        isInt: true,
+        max:100000,                   
+        min: 0,
+      
       }
     },
     img:{
