@@ -19,44 +19,14 @@ const router = Router();
 
 //FUNCIONES CONTROLADORAS
 
- 
 
 
 //FIN FUNCIONES CONTROLADORAS
 
 
 router.get("/",async(req, res)=>{
-    const pokeNumber=400
-    const api= await axios.get(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=${pokeNumber}`)
-    console.log("DATA",api.data.results[0], api.data.results[pokeNumber-1])
-    const apiPromises= api.data.results.map(async function(el){
-        return axios.get(el.url).then(el=>el.data);
-    });
     
-    const allPokeApi= await Promise.all(apiPromises);
-    console.log("ALLPOKEAPI:",allPokeApi[0])
-
-    const getInfPoke=async (api)=>{
-        const objPoke= allPokeApi.map(data=>{
-            return {
-            id:data.id,
-            name:data.name,
-            hp:data.stats[0].base_stat,
-             attack:data.stats[1].base_stat,
-            defense:data.stats[2].base_stat,
-            speed:data.stats[5].base_stat,
-            height:data.height,
-            weight:data.weight,
-            img:data.sprites.other.home.front_default,
-            type:data.types.map(el=>el.type.name),
-            created:false
-            }
-        });
-    }
-    
-    console.log("OBJPOKE:",objPoke[0])
-res.json(objPoke)
-    //  res.send( "Hi I'm the /")
+    res.send( "Hi I'm the /")
     
 })
 
@@ -70,13 +40,13 @@ router.delete("/pokemons/:id",async(req,res)=>{
             await Pokemon.destroy({
                 where: {
                     id: id
-                  }
+                        }
                 }),
             
             res.send("The Pokémon was deleted from db")
         
         }
-       
+
 
     }catch(e){
         console.log("This Pokémon can't be deleted")
